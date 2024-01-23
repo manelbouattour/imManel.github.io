@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>QUIZ</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+
+    <header class="header">
+        <div class="nav-logo">
+            <p class="logo">MB</p>
+          
+        </div>
+            <nav class="navbar">
+                <a href="page1.html" >Accueil</a>
+                <a href="parcours_académique.html">Parcours académique</a>
+                <a href="compétences.html">Compétences</a>
+                <a href="stages.html">Stages</a>
+                <a href="matières.html">Matières</a>
+                <a href="quiz.html" class="active">Quiz</a>
+                <a href="contact.html">Contact</a>
+    
+            </nav>
+    </header>
+<body >
+    <div class="page-quiz">
+   <div class="quiz-container" id ="quiz">
+    <div class="quiz-header">
+        <h2 id="question">Question Text</h2>
+        <ul>
+            <li>
+                <input type="radio" name="answer" id="a" class="answer">
+                <label for ="a" id="a_text">Question</label>
+            </li>
+            <li>
+                <input type="radio" name="answer" id="b" class="answer">
+                <label for ="b" id="b_text">Question</label>
+            </li>
+            <li>
+                <input type="radio" name="answer" id="c" class="answer">
+                <label for ="c" id="c_text">Question</label>
+            </li>
+            <li>
+                <input type="radio" name="answer" id="d" class="answer">
+                <label for ="d" id="d_text">Question</label>
+            </li>
+            
+        </ul>
+    </div>
+
+    <button id="submit">Submit</button>
+   </div>
+
+
+   <script src="script.js"></script>
+</div>
+</body>
+</html>

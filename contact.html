@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Mon Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+<body>
+    <header class="header">
+        <div class="nav-logo">
+            <p class="logo">MB</p>
+          
+        </div>
+            <nav class="navbar">
+                <a href="page1.html" >Accueil</a>
+                <a href="parcours_académique.html" >Parcours académique</a>
+                <a href="compétences.html">Compétences</a>
+                <a href="stages.html" >Stages</a>
+                <a href="matières.html">Matières</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="contact.html" class="active">Contact</a>
+    
+            </nav>
+    </header>
+    <div class="container">
+        <form id="contactForm">
+            <h3>Contactez-moi !</h3>
+            <input type="text" id="name" placeholder="Votre nom" required>
+            <input type="email" id="email" placeholder="Votre E-mail" required>
+            <input type="text" id="Numero" placeholder="Votre Numéro téléphone" required>
+            <textarea id="message" rows="4" placeholder="Votre message"></textarea>
+            <button type="button" onclick="sendEmail()">Envoyer</button>
+        </form>
+    </div>
+    
+    <script>
+        function sendEmail() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const numero = document.getElementById('Numero').value;
+            const message = document.getElementById('message').value;
+    
+            const mailtoLink = `mailto:manelbouattour114@gmail.com?subject=Nouveau message de ${name}&body=Nom: ${name} Email: ${email} Numéro: ${numero} Message: ${message}`;
+    
+            window.location.href = mailtoLink;
+        }
+    </script>
+
+
+</body>
+</html>
